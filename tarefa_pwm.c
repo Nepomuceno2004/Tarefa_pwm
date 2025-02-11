@@ -49,9 +49,9 @@ void pwm_setup()
 
     uint slice = pwm_gpio_to_slice_num(PWM_SERVO); //obter o canal PWM da GPIO
 
-    pwm_set_clkdiv(slice, PWM_DIVISER); //define o divisor de clock do PWM
+    pwm_set_clkdiv(slice, PWM_DIVISER); //define o divisor de clock do PWM 125,0
 
-    pwm_set_wrap(slice, WRAP_PERIOD); //definir o valor de wrap
+    pwm_set_wrap(slice, WRAP_PERIOD); //definir o valor de wrap 2000
 
     pwm_set_gpio_level(PWM_SERVO, 2400); //definir o cico de trabalho (duty cycle) do pwm
     
